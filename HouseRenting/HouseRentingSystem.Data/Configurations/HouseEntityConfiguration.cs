@@ -8,6 +8,11 @@ namespace HouseRentingSystem.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<House> builder)
         {
+            //automatically set the date to the date of the moment of adding
+            builder
+                .Property(h => h.CreatedOn)
+                .HasDefaultValue(DateTime.UtcNow);
+
             builder
                 .HasOne(h => h.Category)
                 .WithMany(c => c.Houses)

@@ -148,3 +148,7 @@ C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\bin\Debug\n
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\obj\Debug\net8.0\HouseRenting.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\obj\Debug\net8.0\HouseRenting.Web.sourcelink.json
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\bin\Debug\net8.0\HouseRentingSystem.Services.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\bin\Debug\net8.0\HouseRentingSystem.Services.pdb
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\bin\Debug\net8.0\HouseRentingSystem.Web.Infrastructure.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\bin\Debug\net8.0\HouseRentingSystem.Web.Infrastructure.pdb

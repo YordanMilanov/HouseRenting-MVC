@@ -1,4 +1,6 @@
-
+using HouseRentingSystem.Services;
+using HouseRentingSystem.Services.Interfaces;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace HouseRenting.Web
 {
@@ -7,6 +9,7 @@ namespace HouseRenting.Web
     
     using HouseRentingSystem.Data;
     using HouseRentingSystem.Data.Models;
+    using static HouseRentingSystem.Web.Infrastructure.Extensions.WebApplicationBuilderExtensions;
 
     public class Program
     {
@@ -39,7 +42,11 @@ namespace HouseRenting.Web
                         builder.Configuration.GetValue<int>("Identity:Password:RequiredLength");
                 })
                 .AddEntityFrameworkStores<HouseRentingDbContext>();
-            
+
+            //Register services
+            builder.Services.AddScoped<IHouseService, HouseService>();
+            builder.Services.AddScoped<IAgentService, AgentService>();
+
             //Registers the controllers and views
             builder.Services.AddControllersWithViews();
 
