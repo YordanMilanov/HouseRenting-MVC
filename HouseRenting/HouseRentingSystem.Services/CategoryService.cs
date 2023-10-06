@@ -9,6 +9,13 @@ namespace HouseRentingSystem.Services
     {
 
         private readonly HouseRentingDbContext dbContext;
+
+        public CategoryService(HouseRentingDbContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
+
+
         public async Task<IEnumerable<HouseSelectCategoryFormModel>> AllCategoriesAsync()
         {
             IEnumerable<HouseSelectCategoryFormModel> allCategories = await this.dbContext

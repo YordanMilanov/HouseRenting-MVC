@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "84BUoJU2AguWjBS9WaaTie9M0Rb6D493imARkD/KEcI=",
+  "Hash": "c1K0NT0vcyFKLzmhlJn/FhC4ybH/JURSiDvfxrM16KI=",
   "Source": "HouseRenting.Web",
   "BasePath": "_content/HouseRenting.Web",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRenting.Web\\wwwroot\\js\\JQuery-override.js",
+      "SourceId": "HouseRenting.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRenting.Web\\wwwroot\\",
+      "BasePath": "_content/HouseRenting.Web",
+      "RelativePath": "js/JQuery-override.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JQuery-override.js"
     },
     {
       "Identity": "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRenting.Web\\wwwroot\\js\\site.js",

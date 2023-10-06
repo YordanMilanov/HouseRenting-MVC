@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HouseRenting.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13d1f86ab9b9eb547024d45d3686bf41a18a102c")]
 [assembly: System.Reflection.AssemblyProductAttribute("HouseRenting.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HouseRenting.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
