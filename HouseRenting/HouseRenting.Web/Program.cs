@@ -46,6 +46,7 @@ namespace HouseRenting.Web
             //Register services
             builder.Services.AddScoped<IHouseService, HouseService>();
             builder.Services.AddScoped<IAgentService, AgentService>();
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
 
             //Registers the controllers and views
             builder.Services.AddControllersWithViews();
