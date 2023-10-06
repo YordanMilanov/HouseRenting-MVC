@@ -61,5 +61,19 @@ namespace HouseRentingSystem.Services
             await this.houseRentingDbContext.Agents.AddAsync(agent);
             await this.houseRentingDbContext.SaveChangesAsync();
         }
+
+        public async Task<string> GetAgentIdByUserIdAsync(string userId)
+        {
+            Agent? agent = await this.houseRentingDbContext
+                .Agents
+                .FirstOrDefaultAsync(a => a.UserId.ToString() == userId);
+
+            if (agent == null)
+            {
+                return null;
+            }
+
+            return agent.Id.ToString();
+        }
     }
 }
