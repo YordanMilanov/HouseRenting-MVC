@@ -9,3 +9,4 @@ C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\ob
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\refint\HouseRentingSystem.Common.dll
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\HouseRentingSystem.Common.pdb
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\ref\HouseRentingSystem.Common.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\HouseRentingSystem.Common.sourcelink.json

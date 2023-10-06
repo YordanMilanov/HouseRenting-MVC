@@ -9,3 +9,8 @@ C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewM
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewModels\obj\Debug\net8.0\refint\HouseRentingSystem.Web.ViewModels.dll
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewModels\obj\Debug\net8.0\HouseRentingSystem.Web.ViewModels.pdb
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewModels\obj\Debug\net8.0\ref\HouseRentingSystem.Web.ViewModels.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewModels\bin\Debug\net8.0\HouseRentingSystem.Common.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewModels\bin\Debug\net8.0\HouseRentingSystem.Common.pdb
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewModels\obj\Debug\net8.0\HouseRentingSystem.Web.ViewModels.csproj.AssemblyReference.cache
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewModels\obj\Debug\net8.0\HouseRentingSystem.Web.ViewModels.sourcelink.json
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Web.ViewModels\obj\Debug\net8.0\HouseRentingSystem.Web.ViewModels.csproj.CopyComplete

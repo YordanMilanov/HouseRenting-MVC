@@ -12,3 +12,9 @@ C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\obj\
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\obj\Debug\net8.0\HouseRentingSystem.Data.pdb
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\obj\Debug\net8.0\HouseRentingSystem.Data.genruntimeconfig.cache
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\obj\Debug\net8.0\ref\HouseRentingSystem.Data.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\bin\Debug\net8.0\HouseRentingSystem.Common.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\bin\Debug\net8.0\HouseRentingSystem.Data.Models.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\bin\Debug\net8.0\HouseRentingSystem.Common.pdb
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\bin\Debug\net8.0\HouseRentingSystem.Data.Models.pdb
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\obj\Debug\net8.0\HouseRentingSystem.Data.sourcelink.json
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Data\obj\Debug\net8.0\HouseRentingSystem.Data.csproj.CopyComplete

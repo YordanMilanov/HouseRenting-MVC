@@ -10,6 +10,7 @@
     {
         public ApplicationUser()
         {
+            this.Id = Guid.NewGuid();
             this.RentedHouses = new HashSet<House>();
         }
 

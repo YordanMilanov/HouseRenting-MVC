@@ -7,6 +7,12 @@ namespace HouseRentingSystem.Data.Models
     using static Common.EntityValidationConstants.Agent;
     public class Agent
     {
+        public Agent()
+        {
+            this.OwnedHouses = new HashSet<House>();
+            this.Id  = Guid.NewGuid();
+        }
+
         [Key]
         public Guid Id { get; set; }
 
@@ -17,5 +23,7 @@ namespace HouseRentingSystem.Data.Models
         public Guid UserId { get; set; }
 
         public virtual ApplicationUser User { get; set; } = null!;
+
+        public virtual ICollection<House> OwnedHouses { get; set; }
     }
 }
