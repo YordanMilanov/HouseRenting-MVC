@@ -1,0 +1,11 @@
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\bin\Debug\net8.0\HouseRentingSystem.Common.deps.json
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\bin\Debug\net8.0\HouseRentingSystem.Common.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\bin\Debug\net8.0\HouseRentingSystem.Common.pdb
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\HouseRentingSystem.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\HouseRentingSystem.Common.AssemblyInfoInputs.cache
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\HouseRentingSystem.Common.AssemblyInfo.cs
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\HouseRentingSystem.Common.csproj.CoreCompileInputs.cache
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\HouseRentingSystem.Common.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\refint\HouseRentingSystem.Common.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\HouseRentingSystem.Common.pdb
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Common\obj\Debug\net8.0\ref\HouseRentingSystem.Common.dll
