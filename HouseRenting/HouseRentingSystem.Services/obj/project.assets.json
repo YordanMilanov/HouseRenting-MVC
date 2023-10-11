@@ -1083,6 +1083,19 @@
           "bin/placeholder/HouseRentingSystem.Data.Models.dll": {}
         }
       },
+      "HouseRentingSystem.Services.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "HouseRentingSystem.Web.ViewModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HouseRentingSystem.Services.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HouseRentingSystem.Services.Data.Models.dll": {}
+        }
+      },
       "HouseRentingSystem.Web.ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2851,6 +2864,11 @@
       "path": "../HouseRentingSystem.Data.Models/HouseRentingSystem.Data.Models.csproj",
       "msbuildProject": "../HouseRentingSystem.Data.Models/HouseRentingSystem.Data.Models.csproj"
     },
+    "HouseRentingSystem.Services.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../HouseRentingSystem.Services.Data.Models/HouseRentingSystem.Services.Data.Models.csproj",
+      "msbuildProject": "../HouseRentingSystem.Services.Data.Models/HouseRentingSystem.Services.Data.Models.csproj"
+    },
     "HouseRentingSystem.Web.ViewModels/1.0.0": {
       "type": "project",
       "path": "../HouseRentingSystem.Web.ViewModels/HouseRentingSystem.Web.ViewModels.csproj",
@@ -2862,6 +2880,7 @@
       "HouseRentingSystem.Common >= 1.0.0",
       "HouseRentingSystem.Data >= 1.0.0",
       "HouseRentingSystem.Data.Models >= 1.0.0",
+      "HouseRentingSystem.Services.Data.Models >= 1.0.0",
       "HouseRentingSystem.Web.ViewModels >= 1.0.0"
     ]
   },
@@ -2900,6 +2919,9 @@
             },
             "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRentingSystem.Data\\HouseRentingSystem.Data.csproj": {
               "projectPath": "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRentingSystem.Data\\HouseRentingSystem.Data.csproj"
+            },
+            "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRentingSystem.Services.Data.Models\\HouseRentingSystem.Services.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRentingSystem.Services.Data.Models\\HouseRentingSystem.Services.Data.Models.csproj"
             },
             "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRentingSystem.Web.ViewModels\\HouseRentingSystem.Web.ViewModels.csproj": {
               "projectPath": "C:\\Users\\danch\\source\\HouseRenting-MVC\\HouseRenting\\HouseRentingSystem.Web.ViewModels\\HouseRentingSystem.Web.ViewModels.csproj"

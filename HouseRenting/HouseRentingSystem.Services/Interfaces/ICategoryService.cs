@@ -12,5 +12,7 @@ namespace HouseRentingSystem.Services.Interfaces
         Task<IEnumerable<HouseSelectCategoryFormModel>> AllCategoriesAsync();
 
         Task<bool> ExistsById(int id);
+
+        Task<IEnumerable<string>> AllCategoryNamesAsync();
     }
 }

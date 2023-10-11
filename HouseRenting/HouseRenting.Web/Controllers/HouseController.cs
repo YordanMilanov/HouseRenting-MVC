@@ -1,4 +1,5 @@
-﻿using HouseRentingSystem.Services.Interfaces;
+﻿using HouseRentingSystem.Services.Data.Models.House;
+using HouseRentingSystem.Services.Interfaces;
 using HouseRentingSystem.Web.Infrastructure.Extensions;
 using HouseRentingSystem.Web.ViewModels.House;
 using static HouseRentingSystem.Common.NotificationMessagesConstants;
@@ -20,6 +21,21 @@ namespace HouseRenting.Web.Controllers
             this.categoryService = categoryService;
             this.agentService = agentService;
             this.houseService = houseService;
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> All([FromQuery] AllHousesQueryModel queryModel)
+        {
+            AllHousesFilteredAndPagedServiceModel serviceModel =
+                await this.houseService.AllAsync(queryModel);
+
+            queryModel.Houses = serviceModel.Houses;
+            queryModel.TotalHouses = serviceModel.TotalHousesCount;
+            queryModel.Categories = await this.categoryService.AllCategoryNamesAsync();
+
+
+            return this.View(queryModel);
         }
 
         [AllowAnonymous]
