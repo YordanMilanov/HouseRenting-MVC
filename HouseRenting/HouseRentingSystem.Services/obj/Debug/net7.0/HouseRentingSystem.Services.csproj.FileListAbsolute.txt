@@ -19,3 +19,5 @@ C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Services\
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Services\obj\Debug\net7.0\refint\HouseRentingSystem.Services.dll
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Services\obj\Debug\net7.0\HouseRentingSystem.Services.pdb
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Services\obj\Debug\net7.0\ref\HouseRentingSystem.Services.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Services\bin\Debug\net7.0\HouseRentingSystem.Services.Data.Models.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRentingSystem.Services\bin\Debug\net7.0\HouseRentingSystem.Services.Data.Models.pdb

@@ -15,7 +15,7 @@
     <a asp-controller="House" asp-action="Details" asp-route-id="@Model.Id"
        class="btn btn-success">Details</a>
 
-    @if (this.User.Identity.IsAuthenticated ?? false)
+    @if (this.User.Identity?.IsAuthenticated ?? false)
     {
         <a asp-controller="House" asp-action="Edit" asp-route-id="@Model.Id"
            class="btn btn-warning">Edit</a>
