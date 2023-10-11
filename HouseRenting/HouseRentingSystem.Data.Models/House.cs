@@ -32,7 +32,7 @@ namespace HouseRentingSystem.Data.Models
         [MaxLength(ImageUrlMaxLength)]
         public string ImageUrl { get; set; } = null!;
 
-        
+
         public decimal PricePerMonth { get; set; }
 
         public DateTime CreatedOn { get; set; }

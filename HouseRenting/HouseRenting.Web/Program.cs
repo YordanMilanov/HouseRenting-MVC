@@ -1,5 +1,6 @@
 using HouseRentingSystem.Services;
 using HouseRentingSystem.Services.Interfaces;
+using HouseRentingSystem.Web.Infrastructure.ModelBinders;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace HouseRenting.Web
@@ -49,7 +50,17 @@ namespace HouseRenting.Web
             builder.Services.AddScoped<ICategoryService, CategoryService>();
 
             //Registers the controllers and views
-            builder.Services.AddControllersWithViews();
+            builder.Services
+                .AddControllersWithViews()
+                .AddMvcOptions(options =>
+                    options
+                        .ModelBinderProviders
+                        .Insert(0, new DecimalModelBinderProvider()));
+            //very important! - our custom modelBinder must be INSERTED at position 0 not added
+            //because the they are used in their order in the list
+            //and if  you add your custom at the end if some other binder succeed to
+            //complete the task all other are not used (including our custom binder)
+
 
             //Build - order does matter
             var app = builder.Build();

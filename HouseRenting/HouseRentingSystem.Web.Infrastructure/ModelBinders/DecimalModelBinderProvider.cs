@@ -23,7 +23,7 @@ namespace HouseRentingSystem.Web.Infrastructure.ModelBinders
             }
             else
             {
-                return null;
+                return null!;
             }
         }
     }

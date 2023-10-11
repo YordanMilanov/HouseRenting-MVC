@@ -21,7 +21,7 @@ namespace HouseRentingSystem.Web.Infrastructure.ModelBinders
                 bindingContext.ValueProvider
                     .GetValue(bindingContext.ModelName);
             if (valueResult != ValueProviderResult.None
-                && string.IsNullOrWhiteSpace(valueResult.FirstValue))
+                && !string.IsNullOrWhiteSpace(valueResult.FirstValue))
             {
                 decimal parsedValue = 0m;
                 bool binderSuccseded = false;
@@ -33,6 +33,7 @@ namespace HouseRentingSystem.Web.Infrastructure.ModelBinders
                     formDecValue = formDecValue.Replace(".", CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator);
 
                     parsedValue = Convert.ToDecimal(formDecValue);
+                    binderSuccseded = true;
                 }
                 catch (Exception e)
                 {
