@@ -24,6 +24,7 @@ namespace HouseRentingSystem.Services
             IEnumerable<IndexViewModel> lastThreeHouses =
                await this.houseRentingDbContext
                     .Houses
+                    .Where(h => h.IsActive)
                     .OrderByDescending(h => h.CreatedOn)
                     .Take(3)
                     .Select(h => new IndexViewModel()
@@ -94,6 +95,7 @@ namespace HouseRentingSystem.Services
 
             //here we materialize the IQueryable before all the operations are done in the db
             IEnumerable<HouseAllViewModel> allHouses = await housesQuery
+                .Where(h => h.IsActive)
                 .Skip((queryModel.CurrentPage - 1) * queryModel.HousesPerPage)
                 .Take(queryModel.HousesPerPage)
                 .Select(h => new HouseAllViewModel

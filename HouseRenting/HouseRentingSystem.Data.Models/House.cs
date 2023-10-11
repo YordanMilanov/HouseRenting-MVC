@@ -33,6 +33,8 @@ namespace HouseRentingSystem.Data.Models
         public string ImageUrl { get; set; } = null!;
 
 
+        public bool IsActive { get; set; }
+
         public decimal PricePerMonth { get; set; }
 
         public DateTime CreatedOn { get; set; }

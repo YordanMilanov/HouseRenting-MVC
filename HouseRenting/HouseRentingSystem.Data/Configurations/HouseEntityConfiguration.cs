@@ -13,6 +13,9 @@ namespace HouseRentingSystem.Data.Configurations
                 .Property(h => h.CreatedOn)
                 .HasDefaultValueSql("GETDATE()");
 
+            builder.Property(h => h.IsActive)
+                .HasDefaultValue(true);
+
             builder
                 .HasOne(h => h.Category)
                 .WithMany(c => c.Houses)
