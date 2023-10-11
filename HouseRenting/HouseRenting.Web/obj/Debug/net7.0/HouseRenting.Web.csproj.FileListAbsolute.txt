@@ -96,3 +96,5 @@ C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\obj\Debug\n
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\obj\Debug\net7.0\HouseRenting.Web.pdb
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\obj\Debug\net7.0\HouseRenting.Web.genruntimeconfig.cache
 C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\obj\Debug\net7.0\ref\HouseRenting.Web.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\bin\Debug\net7.0\HouseRentingSystem.Services.Data.Models.dll
+C:\Users\danch\source\HouseRenting-MVC\HouseRenting\HouseRenting.Web\bin\Debug\net7.0\HouseRentingSystem.Services.Data.Models.pdb

@@ -11,7 +11,7 @@ namespace HouseRentingSystem.Data.Configurations
             //automatically set the date to the date of the moment of adding
             builder
                 .Property(h => h.CreatedOn)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("GETDATE()");
 
             builder
                 .HasOne(h => h.Category)

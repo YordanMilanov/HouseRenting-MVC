@@ -19,9 +19,15 @@
                 </select>
             </div>
         </div>
-        <div class="form-group col-md-3">
-            <label asp-for="SearchString"></label>
-            <input asp-for="SearchString" class="form-control" placeholder="...">
+        <div class="form-group col-md-3 d-flex justify-content-between">
+            <div class="form-group">
+                <label asp-for="HousesPerPage"></label>
+                <select asp-for="HousesPerPage" class="form-control">
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
         </div>
         <div class="form-group col-md-3">
             <div class="form-group">
@@ -73,7 +79,7 @@
            asp-route-currentPage="@(Model.CurrentPage + 1)"
            asp-route-category="@Model.Category"
            asp-route-searchTerm="@Model.SearchString"
-           asp-route-sorting="@((int)Model.SearchString)">>></a>
+           asp-route-sorting="@((int)Model.HouseSorting)">>></a>
     </div>
 </div>
 @if (!Model.Houses.Any())

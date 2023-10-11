@@ -31,6 +31,7 @@ namespace HouseRentingSystem.Web.ViewModels.House
         public int CurrentPage { get; set; }
 
         public int TotalHouses { get; set; }
+        [DisplayName("Show Houses On Page")]
         public int HousesPerPage {get; set; }
 
         public IEnumerable<string> Categories { get; set; }
