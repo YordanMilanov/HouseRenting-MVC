@@ -2,7 +2,9 @@
 
 
 using HouseRentingSystem.Services.Interfaces;
+using HouseRentingSystem.Web.Infrastructure.Extensions;
 using HouseRentingSystem.Web.ViewModels.Home;
+using HouseRentingSystem.Web.ViewModels.House;
 
 namespace HouseRenting.Web.Controllers
 {
@@ -15,10 +17,12 @@ namespace HouseRenting.Web.Controllers
     public class HomeController : Controller
     {
         private readonly IHouseService houseService;
+        private readonly IAgentService agentService;
 
-        public HomeController(IHouseService houseService)
+        public HomeController(IHouseService houseService, IAgentService agentService)
         {
             this.houseService = houseService;
+            this.agentService = agentService;
         }
         public async Task<IActionResult> Index()
         {
@@ -27,6 +31,8 @@ namespace HouseRenting.Web.Controllers
 
             return View(viewModel);
         }
+
+       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -108,5 +108,31 @@ namespace HouseRenting.Web.Controllers
 
             return this.RedirectToAction("All", "House");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Mine()
+        {
+            List<HouseAllViewModel> myHouses = new List<HouseAllViewModel>();
+
+            string userId = this.User.GetId()!;
+            bool isUserAgent = await this.agentService
+                .AgentExistsByUserIdAsync(userId);
+
+            if (isUserAgent)
+            {
+                string? agentId =
+                    await this.agentService.GetAgentIdByUserIdAsync(userId);
+
+                myHouses.AddRange(await this.houseService.AllByAgentIdAsync(agentId!));
+
+            }
+
+            else
+            {
+                myHouses.AddRange(await this.houseService.AllByUserIdAsync(userId));
+            }
+
+            return View(myHouses);
+        }
     }
 }
