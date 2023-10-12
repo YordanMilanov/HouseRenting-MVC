@@ -38,7 +38,7 @@ namespace HouseRentingSystem.Services
             return lastThreeHouses;
         }
 
-        public async Task CreateAsync(HouseFormModel formModel, string agentId)
+        public async Task<string> CreateAndReturnIdAsync(HouseFormModel formModel, string agentId)
         {
             House newHouse = new House
             {
@@ -53,6 +53,9 @@ namespace HouseRentingSystem.Services
 
            await this.houseRentingDbContext.AddAsync(newHouse);
            await this.houseRentingDbContext.SaveChangesAsync();
+            //after house is persisted to db it gets its Id automatically
+            //and we can directly use it here.
+           return newHouse.Id.ToString();
         }
 
         public async Task<AllHousesFilteredAndPagedServiceModel> AllAsync(AllHousesQueryModel queryModel)
@@ -246,6 +249,32 @@ namespace HouseRentingSystem.Services
             house.CategoryId = formModel.CategoryId;
             house.PricePerMonth = formModel.PricePerMonth;
 
+            await this.houseRentingDbContext.SaveChangesAsync();
+        }
+
+        public async Task<HousePreDeleteDetailsViewModel> GetHouseForDeleteByIdAsync(string houseId)
+        {
+            House house = await this.houseRentingDbContext
+                .Houses
+                .Where(h => h.IsActive)
+                .FirstAsync(h => h.Id.ToString() == houseId);
+
+            return new HousePreDeleteDetailsViewModel()
+            {
+                Title = house.Title,
+                Address = house.Address,
+                ImageUrl = house.ImageUrl,
+            };
+        }
+
+        public async Task DeleteHouseByIdAsync(string houseId)
+        {
+            House houseToDelete = await this.houseRentingDbContext
+                .Houses
+                .Where(h => h.IsActive)
+                .FirstAsync(h => h.Id.ToString() == houseId);
+
+            houseToDelete.IsActive = false;
             await this.houseRentingDbContext.SaveChangesAsync();
         }
     }
