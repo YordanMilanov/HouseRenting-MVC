@@ -221,5 +221,32 @@ namespace HouseRentingSystem.Services
                 CategoryId = house.CategoryId,
             };
         }
+
+        public async Task<bool> IsAgentWithIdOwnerOfHouseWithIdAsync(string houseId, string agentId)
+        {
+            House house = await this.houseRentingDbContext
+                .Houses
+                .Where(h => h.IsActive)
+                .FirstAsync(h => h.Id.ToString() == houseId);
+
+            return house.AgentId.ToString() == agentId;
+        }
+
+        public async Task EditHouseByIdAndFormModel(string houseId, HouseFormModel formModel)
+        {
+            House house = await this.houseRentingDbContext
+                .Houses
+                .Where(h => h.IsActive)
+                .FirstAsync(h => h.Id.ToString() == houseId);
+
+            house.Title = formModel.Title;
+            house.Address = formModel.Address;
+            house.Description = formModel.Description;
+            house.ImageUrl = formModel.ImageUrl;
+            house.CategoryId = formModel.CategoryId;
+            house.PricePerMonth = formModel.PricePerMonth;
+
+            await this.houseRentingDbContext.SaveChangesAsync();
+        }
     }
 }
