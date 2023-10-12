@@ -134,5 +134,21 @@ namespace HouseRenting.Web.Controllers
 
             return View(myHouses);
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Details(string id)
+        {
+            HouseDetailsViewModel? viewModel = await this.houseService
+                .GetDetailsByIdAsync(id);
+
+            if (viewModel == null)
+            {
+                this.TempData[ErrorMessage] = "House with the provided id does not exist!";
+                return this.RedirectToAction("All", "House");
+            }
+
+            return View(viewModel);
+        }
     }
 }
