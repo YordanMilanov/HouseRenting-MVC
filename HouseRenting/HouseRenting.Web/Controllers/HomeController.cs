@@ -5,6 +5,7 @@ using HouseRentingSystem.Services.Interfaces;
 using HouseRentingSystem.Web.Infrastructure.Extensions;
 using HouseRentingSystem.Web.ViewModels.Home;
 using HouseRentingSystem.Web.ViewModels.House;
+using Microsoft.Extensions.Primitives;
 
 namespace HouseRenting.Web.Controllers
 {
@@ -35,9 +36,14 @@ namespace HouseRenting.Web.Controllers
        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Error(int statusCode)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            if (statusCode == 400 || statusCode == 404)
+            {
+                return this.View("Error404");
+            }
+
+            return View();
         }
     }
 }
