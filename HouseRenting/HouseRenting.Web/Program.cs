@@ -1,6 +1,7 @@
 using HouseRentingSystem.Services;
 using HouseRentingSystem.Services.Interfaces;
 using HouseRentingSystem.Web.Infrastructure.ModelBinders;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace HouseRenting.Web
@@ -54,9 +55,15 @@ namespace HouseRenting.Web
             builder.Services
                 .AddControllersWithViews()
                 .AddMvcOptions(options =>
+                {
                     options
                         .ModelBinderProviders
-                        .Insert(0, new DecimalModelBinderProvider()));
+                        .Insert(0, new DecimalModelBinderProvider());
+
+                    //turn on CSRF safety
+                    options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
+                });
+                    
             //very important! - our custom modelBinder must be INSERTED at position 0 not added
             //because the they are used in their order in the list
             //and if  you add your custom at the end if some other binder succeed to

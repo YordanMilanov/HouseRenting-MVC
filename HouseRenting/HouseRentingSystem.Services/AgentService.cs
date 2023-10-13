@@ -75,5 +75,21 @@ namespace HouseRentingSystem.Services
 
             return agent.Id.ToString();
         }
+
+        public async Task<bool> HasHouseWithIdAsync(string userId, string houseId)
+        {
+            Agent? agent = await this.houseRentingDbContext
+                .Agents
+                .Where(a => a.UserId.ToString() == userId)
+                .Include(a => a.OwnedHouses)
+                .FirstOrDefaultAsync(a => a.UserId.ToString() == userId);
+
+            if (agent == null)
+            {
+                return false;
+            }
+
+            return agent.OwnedHouses.Any(h => h.Id.ToString() == houseId);
+        }
     }
 }
